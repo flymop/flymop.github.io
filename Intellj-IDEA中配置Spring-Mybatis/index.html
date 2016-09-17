@@ -1,61 +1,300 @@
-<?xml version="1.0" encoding="utf-8"?>
-<search>
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="喵小爱" />
+
+
+
+<meta name="description" content="Intellj IDEA中配置Spring+Mybatis Spring+Mybatis 可以面相接口编程（无需接口的实现类），且可由数据库生成代码，减少了大量编码工作量，整合的具体步骤如下：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Intellj IDEA中配置Spring+Mybatis">
+<meta property="og:url" content="http://xiaoai.site/Intellj-IDEA中配置Spring-Mybatis/index.html">
+<meta property="og:site_name" content="喵小爱的博客">
+<meta property="og:description" content="Intellj IDEA中配置Spring+Mybatis Spring+Mybatis 可以面相接口编程（无需接口的实现类），且可由数据库生成代码，减少了大量编码工作量，整合的具体步骤如下：">
+<meta property="og:image" content="http://xiaoai.site/Intellj-IDEA中配置Spring-Mybatis/mybatisWithSpring.png">
+<meta property="og:updated_time" content="2016-09-17T18:37:35.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Intellj IDEA中配置Spring+Mybatis">
+<meta name="twitter:description" content="Intellj IDEA中配置Spring+Mybatis Spring+Mybatis 可以面相接口编程（无需接口的实现类），且可由数据库生成代码，减少了大量编码工作量，整合的具体步骤如下：">
+<meta name="twitter:image" content="http://xiaoai.site/Intellj-IDEA中配置Spring-Mybatis/mybatisWithSpring.png">
+
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="喵小爱的博客" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>Intellj IDEA中配置Spring+Mybatis | 喵小爱的博客</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: true
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56ff76c972fc0cf9"></script>
+
+
+
+
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.jpg" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">喵小爱</a></h1>
+        </hgroup>
+
+        
+
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:hftangyang@gmail.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" href="https://github.com/flymop" title="GitHub"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa Twitter" href="https://twitter.com/fly_mop" title="Twitter"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Intellj-IDEA/">Intellj IDEA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mybatis/">Mybatis</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/推荐/">推荐</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://qaq.gd">bakabush&#39;s blog</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">喵小爱</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.jpg" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">喵小爱</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:hftangyang@gmail.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/flymop" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa Twitter" target="_blank" href="https://twitter.com/fly_mop" title="Twitter"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap"><article id="post-Intellj-IDEA中配置Spring-Mybatis" class="article article-type-post" itemscope itemprop="blogPost">
   
+    <div class="article-meta">
+      <a href="/Intellj-IDEA中配置Spring-Mybatis/" class="article-date">
+      <time datetime="2016-05-17T07:06:26.000Z" itemprop="datePublished">2016-05-17</time>
+</a>
+
+
+    </div>
   
+  <div class="article-inner">
     
-    <entry>
-      <title><![CDATA[[推荐]好用的词典软件-欧路词典]]></title>
-      <url>http://xiaoai.site/%E6%8E%A8%E8%8D%90-%E5%A5%BD%E7%94%A8%E7%9A%84%E8%AF%8D%E5%85%B8%E8%BD%AF%E4%BB%B6-%E6%AC%A7%E8%B7%AF%E8%AF%8D%E5%85%B8/</url>
-      <content type="html"><![CDATA[<h4 id="写作缘由"><a href="#写作缘由" class="headerlink" title="写作缘由"></a>写作缘由</h4><p>主要原因是欧路词典作为一款并不便宜的优秀付费软件（桌面版99元），有一个发表介绍欧路词典文章得license的推广活动。其次是这款词典确实非常优秀，值得大家去一试,下面介绍一下我了解这款词典得故事和这款词典的优缺点<br> <a id="more"></a></p>
-<h4 id="故事"><a href="#故事" class="headerlink" title="故事"></a>故事</h4><p> 我初中的时候最喜欢干的事情之一就是下载一堆软件然后挨个的去安装尝试他们，也因为如此，对什么是好软件，什么是“流氓软件”有比较清晰的认识。那个时候的许多好软件有的走向消亡，有的走向流氓，有的走向了收费版，后来就慢慢的不感兴趣了。之后有了安卓手机，我的折腾之心又止不住的去尝试不同的软件，刷机等。每天有很长时间都泡在<a href="http://coolapk.com" target="_blank" rel="external">酷安</a>上，正是这个时候结识了欧路词典，对于当时的金山词典后台自启推送打扰以及满屏幕广告的情况下，欧陆词典简直像一股清流。整个界面非常简洁，没有乱七八糟的广告，无推送，提供快捷查词，最重要的是可以继承灵格斯词典词库（另一款曾经的好软件）和有道等在线词库</p>
-<h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p> 今天要说的这款桌面版欧陆词典是公认（查看各中文社区讨论）mac上最（广告法你来打我呀）优秀的第三方词典（顺带说我用的黑苹果，因为linux桌面环境太扯了）<br> 比较有特色的地方摘抄一下官网：</p>
-<blockquote>
-<p>《欧路词典》Mac版 完全依据苹果风格和使用习惯进行精心设计，并且提供了强大的功能。<br>全面支持最新Retina屏幕，更加的词典阅读体验，尽展清晰精美细节<br>智能词典: 支持单词模糊搜索、拼写校正、联机词典<br>文章、短句翻译<br>单词、整句发音朗读<br>鼠标取词、划词翻译<br>包含生词本、历史记录等学习功能 </p>
-</blockquote>
-<p>摘抄一下优点：</p>
-<ul>
-<li>提供Mac系统屏幕取词、划词搜索，支持任何Mac程序，准确率最高</li>
-<li>支持单词和词组取词，还能整句翻译句子</li>
-<li>大量取词设置，方便不同操作习惯的用户</li>
-<li>常用英汉词条30万个，专业词条40万个，专业词库覆盖医学、经济、工程、计算机等十余个领域</li>
-<li>支持海量第三方词典库，包括：Mdict、林格斯、Babylon等扩充词库</li>
-<li>对整篇文件进行翻译</li>
-<li>优化的发音引擎，既可以单词发音，还能进行整句的朗读</li>
-<li>可以导入金山词霸、有道词典的生词本</li>
-<li>提供免费词库编辑器，自行制作导入Windows系统中的词库</li>
-</ul>
-<p>个人使用的感受就是沿用了安卓的极简强大的功能，取词十分方便，查词只要状态栏一点，作为经常需要阅读英文资料的人来说这么一款翻译软件简直不可多得</p>
-<h4 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h4><p>当然这软件也有缺点，有些地方设置的不合理，比如你把剪贴板翻译打开之后，啥玩意儿都忘搜索栏复制一遍，影响快速查词<br>其次默认配置对词组的翻译很弱鸡，需要在线翻译的插件补全<br>但是这并不妨碍欧陆词典作为一款安静优秀的软件来使用，大家有空来试试吧~ </p>
-<h4 id="试用地址"><a href="#试用地址" class="headerlink" title="试用地址"></a>试用地址</h4><p>官网在这里 <a href="https://www.eudic.net/" target="_blank" rel="external">https://www.eudic.net/</a></p>
-]]></content>
-    </entry>
+      <input type="hidden" class="isFancy" />
     
-    <entry>
-      <title><![CDATA[Java正则表达式的匹配]]></title>
-      <url>http://xiaoai.site/Java%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E5%8C%B9%E9%85%8D/</url>
-      <content type="html"><![CDATA[<h4 id="Java中正则匹配的转义"><a href="#Java中正则匹配的转义" class="headerlink" title="Java中正则匹配的转义"></a>Java中正则匹配的转义</h4><p>Java中无论是String.matches()|Pattern.matches|Matcher.matches()所需要的正则表达式均为字符串，因此与常见的正则表达式有所不同。比如有下面一个字符串:<br> <a id="more"></a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;<span class="string">"timestamp"</span>:<span class="string">"1087188754894"</span>&#125;</div></pre></td></tr></table></figure></p>
-<p>如果你把它放到java的字符串里面去，它会变成这样子：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">String sdd =<span class="string">"&#123;\"timestamp\":\"1467188864896\"&#125;"</span>;</div></pre></td></tr></table></figure>
-<p>可以看到对[“]需要转义为\” 代表字符串中的特殊符号，需要原样输出<br>同理，对于要放到字符串里面的正则表达式，同样需要转义，比如我想输入一个\，在正则里面是\，放到字符串，这两个反斜杠均代表特殊含义（\n \t 等）所以需要转义原样输出，所以此时应该用\\表示匹配一个反斜杠</p>
-<p>匹配上述字符串的正则为：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">\&#123;(<span class="string">"timestamp"</span>:<span class="string">"\d+"</span>)\&#125;</div></pre></td></tr></table></figure>
-<p>转成String类型如下所示：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="string">"\\&#123;(\"timestamp\":\"\\d+\")\\&#125;"</span></div></pre></td></tr></table></figure></p>
-<p>此时成功匹配到2组。</p>
-<p>这里推荐一个网站<a href="http://www.regexplanet.com/advanced/java/index.html" target="_blank" rel="external">regexplanet</a>这个网站只需要你提供原字符串和正则匹配式，他会帮你完成转字符串的各项工作，并提供了丰富的模式可选。这个网站同样提供了其他语言的版本。</p>
-<h4 id="Java中正则匹配的分组"><a href="#Java中正则匹配的分组" class="headerlink" title="Java中正则匹配的分组"></a>Java中正则匹配的分组</h4><p>同样是上面的字符串，现在有另外一个要求：将两遍的花括号去除，那么就要使用组的概念，以小括号为组，<strong>从左向右，从外到里</strong>，分别计组，其中第0组为整体， 从stackoverflow上看到的一图流，一眼看懂分组，如下：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">(group)(?:non-capturing-group)(g(?:ro|u)p( (nested)inside)(another)group)(?=assertion)</div><div class="line">|     |                       |          | |      |      ||       |     |</div><div class="line"><span class="number">1</span>-----<span class="number">1</span>                       |          | <span class="number">4</span>------<span class="number">4</span>      |<span class="number">5</span>-------<span class="number">5</span>     |</div><div class="line">                              |          <span class="number">3</span>---------------<span class="number">3</span>              |</div><div class="line">                              <span class="number">2</span>-----------------------------------------<span class="number">2</span></div></pre></td></tr></table></figure>
-<p>匹配前文提到的字符串，去除两遍的花括号，写个测试类如下</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">PatternGroup</span><span class="params">()</span></span>&#123;</div><div class="line">    String sourceStr =<span class="string">"&#123;\"timestamp\":\"1087188754894\"&#125;"</span>;</div><div class="line">    String patternStr = <span class="string">"\\&#123;(\"timestamp\":\"\\d+\")\\&#125;"</span>;</div><div class="line">    Pattern pattern = Pattern.compile(patternStr);</div><div class="line">    Matcher matcher = pattern.matcher(sourceStr);</div><div class="line">    String output = <span class="string">""</span>;</div><div class="line">    matcher.matches();<span class="comment">//匹配之后才能用group(i),start(i),end(i)</span></div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=matcher.groupCount();i++) &#123;</div><div class="line"></div><div class="line">        output += matcher.group(i);</div><div class="line">    &#125;</div><div class="line">    System.out.println(output);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>其中需要注意的是，group(i)等需要先匹配再使用。<br>还有另一种方法，利用find():</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">PatternGroup</span><span class="params">()</span></span>&#123;</div><div class="line">    String sourceStr =<span class="string">"&#123;\"timestamp\":\"1087188754894\"&#125;"</span>;</div><div class="line">    String patternStr = <span class="string">"\\&#123;(\"timestamp\":\"\\d+\")\\&#125;"</span>;</div><div class="line">    Pattern pattern = Pattern.compile(patternStr);</div><div class="line">    Matcher matcher = pattern.matcher(sourceStr);</div><div class="line">    String output = <span class="string">""</span>;</div><div class="line">    <span class="keyword">while</span>(matcher.find()) &#123;</div><div class="line">        System.out.println(matcher.group());</div><div class="line">    &#125;</div><div class="line">    System.out.println(output);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="Java中正则表达式的进一步应用：Grok"><a href="#Java中正则表达式的进一步应用：Grok" class="headerlink" title="Java中正则表达式的进一步应用：Grok"></a>Java中正则表达式的进一步应用：Grok</h4><p>待写。</p>
-]]></content>
-    </entry>
     
-    <entry>
-      <title><![CDATA[Intellj IDEA中配置Spring+Mybatis]]></title>
-      <url>http://xiaoai.site/Intellj-IDEA%E4%B8%AD%E9%85%8D%E7%BD%AESpring-Mybatis/</url>
-      <content type="html"><![CDATA[<h4 id="Intellj-IDEA中配置Spring-Mybatis"><a href="#Intellj-IDEA中配置Spring-Mybatis" class="headerlink" title="Intellj IDEA中配置Spring+Mybatis"></a>Intellj IDEA中配置Spring+Mybatis</h4><p> Spring+Mybatis 可以面相接口编程（无需接口的实现类），且可由数据库生成代码，减少了大量编码工作量，整合的具体步骤如下：<br> <a id="more"></a></p>
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Intellj IDEA中配置Spring+Mybatis
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/编程/">编程</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Intellj-IDEA/">Intellj IDEA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mybatis/">Mybatis</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h4 id="Intellj-IDEA中配置Spring-Mybatis"><a href="#Intellj-IDEA中配置Spring-Mybatis" class="headerlink" title="Intellj IDEA中配置Spring+Mybatis"></a>Intellj IDEA中配置Spring+Mybatis</h4><p> Spring+Mybatis 可以面相接口编程（无需接口的实现类），且可由数据库生成代码，减少了大量编码工作量，整合的具体步骤如下：<br> <a id="more"></a></p>
 <ol>
 <li>数据库中新建表<br>例如新建user表：<br>| id | name   |<br>| —| —— |<br>| 1  | 喵小爱  | </li>
 <li><p>生成代码</p>
@@ -85,63 +324,222 @@
 <li>解决：在pom.xml中添加如下配置：<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></div><div class="line">  ...</div><div class="line">    <span class="tag">&lt;<span class="name">resources</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">resource</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/java<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></div><div class="line">    ...</div><div class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
-]]></content>
-    </entry>
+
+      
+    </div>
     
-    <entry>
-      <title><![CDATA[mysql和java中的时间]]></title>
-      <url>http://xiaoai.site/mysql%E5%92%8Cjava%E4%B8%AD%E7%9A%84%E6%97%B6%E9%97%B4/</url>
-      <content type="html"><![CDATA[<h3 id="MySQL中的时间"><a href="#MySQL中的时间" class="headerlink" title="MySQL中的时间"></a>MySQL中的时间</h3><p>MySQL中有四种表示时间的类型，分别是 <code>DATETIME</code> <code>DATE</code> <code>TIMESTAMP</code> <code>TIME</code> 分别适用如下:<br> <a id="more"></a><br><code>date</code>:只有日期没有时间，范围为’1000-01-01’到’9999-12-31’，显示格式为’YYYY-MM-DD’</p>
-<p><code>DATETIME</code>:既有日期又有时间，范围为’1000-01-01 00:00:00’ 到 ‘9999-12-31 23:59:59’，显示格式为’YYYY-MM-DD HH:MM:SS’</p>
-<p><code>TIMESTAMP</code>:包含日期和秒，显示格式为YYYY-MM-DD HH:MM:SS，表示范围为’1970-01-01 00:00:00’UTC 到 ‘2038-01-19 03:14:07’ UTC，插入TIMESTAMP值，MySQL会转换服务器所在时区时间（默认）为UTC时区时间，取出也同理</p>
-<p>可以自行设定当前时区</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">SET</span> <span class="keyword">time_zone</span>=<span class="string">'+00:00'</span></div></pre></td></tr></table></figure>
-<p>设定举例</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">insert</span> <span class="keyword">into</span> test_timestamp <span class="keyword">values</span>(<span class="string">"2016-04-15 21:31:59"</span>);</div></pre></td></tr></table></figure>
-<p><code>CURRENT_TIMESTAMP</code>: 当前TimeStamp</p>
-<p>举例：</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">Create</span> <span class="keyword">table</span> <span class="keyword">test</span>(</div><div class="line"><span class="keyword">time</span> <span class="keyword">TIMESTAMP</span> <span class="keyword">DEFAULT</span> <span class="keyword">CURRENT_TIMESTAMP</span> );</div></pre></td></tr></table></figure>
-<p><code>TIME</code>：只有时间，显示格式为 ‘HH:MM:SS/HHH:MM:SS’，范围从’-838:59:59’ 到 ‘838:59:59’</p>
-<h3 id="Java中的时间"><a href="#Java中的时间" class="headerlink" title="Java中的时间"></a>Java中的时间</h3><ul>
-<li>java.util.Date</li>
-<li>java.util.Calendar</li>
-<li>java.time (java8)</li>
-</ul>
-<h3 id="Java中的时间与MySQL中的时间之间转换"><a href="#Java中的时间与MySQL中的时间之间转换" class="headerlink" title="Java中的时间与MySQL中的时间之间转换"></a>Java中的时间与MySQL中的时间之间转换</h3><p>java.util.Date 的子类 </p>
-<ul>
-<li>java.sql.Date -&gt;MySQL DATE</li>
-<li>java.sql.Time -&gt;Mysql TIME</li>
-<li>java.sql.Timestamp -&gt;MySQL TIMESTAMP</li>
-<li><p>与MySQL中DATETIME对应的做法</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">java.util.Date date = <span class="keyword">new</span> Date();</div><div class="line">Object obj = <span class="keyword">new</span> java.sql.Timestamp(date.getTime());</div><div class="line">perparedStatement.setObject(obj);</div></pre></td></tr></table></figure>
-</li>
-<li><p>LocalDate与java.sql.Date之间转换</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">java.sql.Date.valueOf(localDate);</div><div class="line">sqlDate.toLocalDate();</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>参考资料：</p>
-<p><a href="http://dev.mysql.com/doc/refman/5.7/en/datetime.html" target="_blank" rel="external">http://dev.mysql.com/doc/refman/5.7/en/datetime.html</a></p>
-<p><a href="http://www.tutorialspoint.com/java/java_date_time.htm" target="_blank" rel="external">http://www.tutorialspoint.com/java/java_date_time.htm</a></p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[既然建了博客就写点东西]]></title>
-      <url>http://xiaoai.site/%E6%97%A2%E7%84%B6%E5%BB%BA%E4%BA%86%E5%8D%9A%E5%AE%A2%E5%B0%B1%E5%86%99%E7%82%B9%E4%B8%9C%E8%A5%BF/</url>
-      <content type="html"><![CDATA[<p>一时冲动看到域名特别便宜就买了，闲置了好长时间，因为懒一直被搁置，最近开始重新看一些编程所以弄了个hexo生成的博客放在github page上，既然弄了所以得写点东西以示存在吧，想了一下这个博客就分为一下两类<br><a id="more"></a></p>
-<blockquote>
-<ul>
-<li>学习笔记，自己的总结</li>
-<li>日记，杂谈</li>
-</ul>
-</blockquote>
-<h4 id="一些联系方式"><a href="#一些联系方式" class="headerlink" title="一些联系方式"></a>一些联系方式</h4><p><a href="https://twitter.com/fly_mop" target="_blank" rel="external">twitter</a>（一个话痨），欢迎来fo (づ｡◕‿‿◕｡)づ</p>
-<p><a href="http://telegram.me/fly_mop" target="_blank" rel="external">telegram</a> 即时聊天工具戳这里可以找到我</p>
-<p><a href="mailto:hftangyang@gmail.com" target="_blank" rel="external">gmail</a> 也可以给我写邮件</p>
-<p>就酱O(∩_∩)O~~</p>
-]]></content>
-    </entry>
-    
+  </div>
   
+    
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/Java正则表达式的匹配/">
+                    Java正则表达式的匹配
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/mysql和java中的时间/">
+                    mysql和java中的时间
+                </a>
+            </div>
+        
+    </nav>
+
   
-</search>
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Intellj-IDEA中配置Spring-Mybatis"><span class="toc-number">1.</span> <span class="toc-text">Intellj IDEA中配置Spring+Mybatis</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#可能错误：Invalid-bound-statement-not-found"><span class="toc-number">2.</span> <span class="toc-text">可能错误：Invalid bound statement (not found)</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+
+    
+        <div class="addthis_sharing_toolbox"></div>
+    
+</div>
+
+
+
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <div id="comment-box" ></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="Intellj-IDEA中配置Spring-Mybatis/" data-title="Intellj IDEA中配置Spring+Mybatis" data-url="http://xiaoai.site/Intellj-IDEA中配置Spring-Mybatis/"></div>
+    <script>
+        var duoshuoQuery = {short_name:"miaoxiaoai"};
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            s.async = true; s.charset = 'UTF-8';
+            (d.head || d.body).appendChild(s);
+        }
+
+        
+    </script>
+    
+    <script> loadComment(); </script>
+
+</div>
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/Java正则表达式的匹配/" title="上一篇: Java正则表达式的匹配">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/mysql和java中的时间/" title="下一篇: mysql和java中的时间">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/推荐-好用的词典软件-欧路词典/">[推荐]好用的词典软件-欧路词典</a></li><li class="post-list-item"><a class="post-list-link" href="/Java正则表达式的匹配/">Java正则表达式的匹配</a></li><li class="post-list-item"><a class="post-list-link" href="/Intellj-IDEA中配置Spring-Mybatis/">Intellj IDEA中配置Spring+Mybatis</a></li><li class="post-list-item"><a class="post-list-link" href="/mysql和java中的时间/">mysql和java中的时间</a></li><li class="post-list-item"><a class="post-list-link" href="/既然建了博客就写点东西/">既然建了博客就写点东西</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2016 喵小爱
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 3;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-76470812-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+             post: ".article-entry a[href], .copyright a[href]", 
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>

@@ -15,12 +15,16 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="喵小爱的博客">
-<meta property="og:url" content="http://xiaoai.site/archives/2016/05/index.html">
+<meta name="description" content="MySQL中的时间MySQL中有四种表示时间的类型，分别是 DATETIME DATE TIMESTAMP TIME 分别适用如下:">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mysql和java中的时间">
+<meta property="og:url" content="http://xiaoai.site/mysql和java中的时间/index.html">
 <meta property="og:site_name" content="喵小爱的博客">
+<meta property="og:description" content="MySQL中的时间MySQL中有四种表示时间的类型，分别是 DATETIME DATE TIMESTAMP TIME 分别适用如下:">
+<meta property="og:updated_time" content="2016-09-17T18:42:51.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="喵小爱的博客">
+<meta name="twitter:title" content="mysql和java中的时间">
+<meta name="twitter:description" content="MySQL中的时间MySQL中有四种表示时间的类型，分别是 DATETIME DATE TIMESTAMP TIME 分别适用如下:">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -52,7 +56,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Archives: 2016/5 | 喵小爱的博客</title>
+<title>mysql和java中的时间 | 喵小爱的博客</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -62,8 +66,8 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
-        isArchive: true,
+        isPost: true,
+        isArchive: false,
         isTag: false,
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
@@ -244,60 +248,198 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-mysql和java中的时间" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/Intellj-IDEA中配置Spring-Mybatis/" class="archive-article-date">
-      <time datetime="2016-05-17T07:06:26.000Z" itemprop="datePublished">05-17</time>
+    <div class="article-meta">
+      <a href="/mysql和java中的时间/" class="article-date">
+      <time datetime="2016-04-15T12:48:58.000Z" itemprop="datePublished">2016-04-15</time>
 </a>
 
 
-        </div>
-         
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/Intellj-IDEA中配置Spring-Mybatis/">Intellj IDEA中配置Spring+Mybatis</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      mysql和java中的时间
     </h1>
   
 
-        <div class="article-info info-on-archive">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
     <div class="article-category tagcloud">
     <a class="article-category-link" href="/categories/编程/">编程</a>
     </div>
 
 
-          
+        
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Intellj-IDEA/">Intellj IDEA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mybatis/">Mybatis</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li></ul>
     </div>
 
-        </div>
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h3 id="MySQL中的时间"><a href="#MySQL中的时间" class="headerlink" title="MySQL中的时间"></a>MySQL中的时间</h3><p>MySQL中有四种表示时间的类型，分别是 <code>DATETIME</code> <code>DATE</code> <code>TIMESTAMP</code> <code>TIME</code> 分别适用如下:<br> <a id="more"></a><br><code>date</code>:只有日期没有时间，范围为’1000-01-01’到’9999-12-31’，显示格式为’YYYY-MM-DD’</p>
+<p><code>DATETIME</code>:既有日期又有时间，范围为’1000-01-01 00:00:00’ 到 ‘9999-12-31 23:59:59’，显示格式为’YYYY-MM-DD HH:MM:SS’</p>
+<p><code>TIMESTAMP</code>:包含日期和秒，显示格式为YYYY-MM-DD HH:MM:SS，表示范围为’1970-01-01 00:00:00’UTC 到 ‘2038-01-19 03:14:07’ UTC，插入TIMESTAMP值，MySQL会转换服务器所在时区时间（默认）为UTC时区时间，取出也同理</p>
+<p>可以自行设定当前时区</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">SET</span> <span class="keyword">time_zone</span>=<span class="string">'+00:00'</span></div></pre></td></tr></table></figure>
+<p>设定举例</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">insert</span> <span class="keyword">into</span> test_timestamp <span class="keyword">values</span>(<span class="string">"2016-04-15 21:31:59"</span>);</div></pre></td></tr></table></figure>
+<p><code>CURRENT_TIMESTAMP</code>: 当前TimeStamp</p>
+<p>举例：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">Create</span> <span class="keyword">table</span> <span class="keyword">test</span>(</div><div class="line"><span class="keyword">time</span> <span class="keyword">TIMESTAMP</span> <span class="keyword">DEFAULT</span> <span class="keyword">CURRENT_TIMESTAMP</span> );</div></pre></td></tr></table></figure>
+<p><code>TIME</code>：只有时间，显示格式为 ‘HH:MM:SS/HHH:MM:SS’，范围从’-838:59:59’ 到 ‘838:59:59’</p>
+<h3 id="Java中的时间"><a href="#Java中的时间" class="headerlink" title="Java中的时间"></a>Java中的时间</h3><ul>
+<li>java.util.Date</li>
+<li>java.util.Calendar</li>
+<li>java.time (java8)</li>
+</ul>
+<h3 id="Java中的时间与MySQL中的时间之间转换"><a href="#Java中的时间与MySQL中的时间之间转换" class="headerlink" title="Java中的时间与MySQL中的时间之间转换"></a>Java中的时间与MySQL中的时间之间转换</h3><p>java.util.Date 的子类 </p>
+<ul>
+<li>java.sql.Date -&gt;MySQL DATE</li>
+<li>java.sql.Time -&gt;Mysql TIME</li>
+<li>java.sql.Timestamp -&gt;MySQL TIMESTAMP</li>
+<li><p>与MySQL中DATETIME对应的做法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">java.util.Date date = <span class="keyword">new</span> Date();</div><div class="line">Object obj = <span class="keyword">new</span> java.sql.Timestamp(date.getTime());</div><div class="line">perparedStatement.setObject(obj);</div></pre></td></tr></table></figure>
+</li>
+<li><p>LocalDate与java.sql.Date之间转换</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">java.sql.Date.valueOf(localDate);</div><div class="line">sqlDate.toLocalDate();</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>参考资料：</p>
+<p><a href="http://dev.mysql.com/doc/refman/5.7/en/datetime.html" target="_blank" rel="external">http://dev.mysql.com/doc/refman/5.7/en/datetime.html</a></p>
+<p><a href="http://www.tutorialspoint.com/java/java_date_time.htm" target="_blank" rel="external">http://www.tutorialspoint.com/java/java_date_time.htm</a></p>
 
+      
+    </div>
+    
+  </div>
+  
     
 
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/Intellj-IDEA中配置Spring-Mybatis/">
+                    Intellj IDEA中配置Spring+Mybatis
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/既然建了博客就写点东西/">
+                    既然建了博客就写点东西
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#MySQL中的时间"><span class="toc-number">1.</span> <span class="toc-text">MySQL中的时间</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java中的时间"><span class="toc-number">2.</span> <span class="toc-text">Java中的时间</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java中的时间与MySQL中的时间之间转换"><span class="toc-number">3.</span> <span class="toc-text">Java中的时间与MySQL中的时间之间转换</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+
+    
+        <div class="addthis_sharing_toolbox"></div>
+    
+</div>
+
+
+
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <div id="comment-box" ></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="mysql和java中的时间/" data-title="mysql和java中的时间" data-url="http://xiaoai.site/mysql和java中的时间/"></div>
+    <script>
+        var duoshuoQuery = {short_name:"miaoxiaoai"};
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            s.async = true; s.charset = 'UTF-8';
+            (d.head || d.body).appendChild(s);
+        }
+
+        
+    </script>
+    
+    <script> loadComment(); </script>
+
+</div>
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/Intellj-IDEA中配置Spring-Mybatis/" title="上一篇: Intellj IDEA中配置Spring+Mybatis">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/既然建了博客就写点东西/" title="下一篇: 既然建了博客就写点东西">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/推荐-好用的词典软件-欧路词典/">[推荐]好用的词典软件-欧路词典</a></li><li class="post-list-item"><a class="post-list-link" href="/Java正则表达式的匹配/">Java正则表达式的匹配</a></li><li class="post-list-item"><a class="post-list-link" href="/Intellj-IDEA中配置Spring-Mybatis/">Intellj IDEA中配置Spring+Mybatis</a></li><li class="post-list-item"><a class="post-list-link" href="/mysql和java中的时间/">mysql和java中的时间</a></li><li class="post-list-item"><a class="post-list-link" href="/既然建了博客就写点东西/">既然建了博客就写点东西</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">

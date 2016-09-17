@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title><![CDATA[[推荐]好用的词典软件-欧路词典]]></title>
+      <url>http://xiaoai.site/2016/09/18/%E6%8E%A8%E8%8D%90-%E5%A5%BD%E7%94%A8%E7%9A%84%E8%AF%8D%E5%85%B8%E8%BD%AF%E4%BB%B6-%E6%AC%A7%E8%B7%AF%E8%AF%8D%E5%85%B8/</url>
+      <content type="html"><![CDATA[<h4 id="写作缘由"><a href="#写作缘由" class="headerlink" title="写作缘由"></a>写作缘由</h4><p>主要原因是欧路词典作为一款并不便宜的优秀付费软件（桌面版99元），有一个发表介绍欧路词典文章得license的推广活动。其次是这款词典确实非常优秀，值得大家去一试,下面介绍一下我了解这款词典得故事和这款词典的优缺点<br> <a id="more"></a></p>
+<h4 id="故事"><a href="#故事" class="headerlink" title="故事"></a>故事</h4><p> 我初中的时候最喜欢干的事情之一就是下载一堆软件然后挨个的去安装尝试他们，也因为如此，对什么是好软件，什么是“流氓软件”有比较清晰的认识。那个时候的许多好软件有的走向消亡，有的走向流氓，有的走向了收费版，后来就慢慢的不感兴趣了。之后有了安卓手机，我的折腾之心又止不住的去尝试不同的软件，刷机等。每天有很长时间都泡在<a href="http://coolapk.com" target="_blank" rel="external">酷安</a>上，正是这个时候结识了欧路词典，对于当时的金山词典后台自启推送打扰以及满屏幕广告的情况下，欧陆词典简直像一股清流。整个界面非常简洁，没有乱七八糟的广告，无推送，提供快捷查词，最重要的是可以继承灵格斯词典词库（另一款曾经的好软件）和有道等在线词库</p>
+<h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p> 今天要说的这款桌面版欧陆词典是公认（查看各中文社区讨论）mac上最（广告法你来打我呀）优秀的第三方词典（顺带说我用的黑苹果，因为linux桌面环境太扯了）<br> 比较有特色的地方摘抄一下官网：</p>
+<blockquote>
+<p>《欧路词典》Mac版 完全依据苹果风格和使用习惯进行精心设计，并且提供了强大的功能。<br>全面支持最新Retina屏幕，更加的词典阅读体验，尽展清晰精美细节<br>智能词典: 支持单词模糊搜索、拼写校正、联机词典<br>文章、短句翻译<br>单词、整句发音朗读<br>鼠标取词、划词翻译<br>包含生词本、历史记录等学习功能 </p>
+</blockquote>
+<p>摘抄一下优点：</p>
+<ul>
+<li>提供Mac系统屏幕取词、划词搜索，支持任何Mac程序，准确率最高</li>
+<li>支持单词和词组取词，还能整句翻译句子</li>
+<li>大量取词设置，方便不同操作习惯的用户</li>
+<li>常用英汉词条30万个，专业词条40万个，专业词库覆盖医学、经济、工程、计算机等十余个领域</li>
+<li>支持海量第三方词典库，包括：Mdict、林格斯、Babylon等扩充词库</li>
+<li>对整篇文件进行翻译</li>
+<li>优化的发音引擎，既可以单词发音，还能进行整句的朗读</li>
+<li>可以导入金山词霸、有道词典的生词本</li>
+<li>提供免费词库编辑器，自行制作导入Windows系统中的词库</li>
+</ul>
+<p>个人使用的感受就是沿用了安卓的极简强大的功能，取词十分方便，查词只要状态栏一点，作为经常需要阅读英文资料的人来说这么一款翻译软件简直不可多得</p>
+<h4 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h4><p>当然这软件也有缺点，有些地方设置的不合理，比如你把剪贴板翻译打开之后，啥玩意儿都忘搜索栏复制一遍，影响快速查词<br>其次默认配置对词组的翻译很弱鸡，需要在线翻译的插件补全<br>但是这并不妨碍欧陆词典作为一款安静优秀的软件来使用，大家有空来试试吧~ </p>
+<h4 id="试用地址"><a href="#试用地址" class="headerlink" title="试用地址"></a>试用地址</h4><p>官网在这里 <a href="https://www.eudic.net/" target="_blank" rel="external">https://www.eudic.net/</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Java正则表达式的匹配]]></title>
       <url>http://xiaoai.site/2016/06/29/Java%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E5%8C%B9%E9%85%8D/</url>
       <content type="html"><![CDATA[<h4 id="Java中正则匹配的转义"><a href="#Java中正则匹配的转义" class="headerlink" title="Java中正则匹配的转义"></a>Java中正则匹配的转义</h4><p>Java中无论是String.matches()|Pattern.matches|Matcher.matches()所需要的正则表达式均为字符串，因此与常见的正则表达式有所不同。比如有下面一个字符串:<br> <a id="more"></a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;<span class="string">"timestamp"</span>:<span class="string">"1087188754894"</span>&#125;</div></pre></td></tr></table></figure></p>

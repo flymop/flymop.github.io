@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xiaoai.site/"/>
-  <updated>2016-09-17T19:33:11.000Z</updated>
+  <updated>2016-09-18T05:03:07.000Z</updated>
   <id>http://xiaoai.site/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>[推荐]好用的词典软件-欧路词典</title>
-    <link href="http://xiaoai.site/%E6%8E%A8%E8%8D%90-%E5%A5%BD%E7%94%A8%E7%9A%84%E8%AF%8D%E5%85%B8%E8%BD%AF%E4%BB%B6-%E6%AC%A7%E8%B7%AF%E8%AF%8D%E5%85%B8/"/>
-    <id>http://xiaoai.site/推荐-好用的词典软件-欧路词典/</id>
+    <link href="http://xiaoai.site/posts/recommend-oulu-dictionary/"/>
+    <id>http://xiaoai.site/posts/recommend-oulu-dictionary/</id>
     <published>2016-09-17T18:56:40.000Z</published>
-    <updated>2016-09-17T19:33:11.000Z</updated>
+    <updated>2016-09-18T05:03:07.000Z</updated>
     
     <content type="html"><![CDATA[<h4 id="写作缘由"><a href="#写作缘由" class="headerlink" title="写作缘由"></a>写作缘由</h4><p>主要原因是欧路词典作为一款并不便宜的优秀付费软件（桌面版99元），有一个发表介绍欧路词典文章得license的推广活动。其次是这款词典确实非常优秀，值得大家去一试,下面介绍一下我了解这款词典得故事和这款词典的优缺点<br> <a id="more"></a></p>
 <h4 id="故事"><a href="#故事" class="headerlink" title="故事"></a>故事</h4><p> 我初中的时候最喜欢干的事情之一就是下载一堆软件然后挨个的去安装尝试他们，也因为如此，对什么是好软件，什么是“流氓软件”有比较清晰的认识。那个时候的许多好软件有的走向消亡，有的走向流氓，有的走向了收费版，后来就慢慢的不感兴趣了。之后有了安卓手机，我的折腾之心又止不住的去尝试不同的软件，刷机等。每天有很长时间都泡在<a href="http://coolapk.com" target="_blank" rel="external">酷安</a>上，正是这个时候结识了欧路词典，对于当时的金山词典后台自启推送打扰以及满屏幕广告的情况下，欧陆词典简直像一股清流。整个界面非常简洁，没有乱七八糟的广告，无推送，提供快捷查词，最重要的是可以继承灵格斯词典词库（另一款曾经的好软件）和有道等在线词库</p>
@@ -60,10 +60,10 @@
   
   <entry>
     <title>Java正则表达式的匹配</title>
-    <link href="http://xiaoai.site/Java%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E5%8C%B9%E9%85%8D/"/>
-    <id>http://xiaoai.site/Java正则表达式的匹配/</id>
+    <link href="http://xiaoai.site/posts/regex%20in%20java/"/>
+    <id>http://xiaoai.site/posts/regex in java/</id>
     <published>2016-06-29T15:47:12.000Z</published>
-    <updated>2016-09-17T18:43:36.000Z</updated>
+    <updated>2016-09-18T05:04:21.000Z</updated>
     
     <content type="html"><![CDATA[<h4 id="Java中正则匹配的转义"><a href="#Java中正则匹配的转义" class="headerlink" title="Java中正则匹配的转义"></a>Java中正则匹配的转义</h4><p>Java中无论是String.matches()|Pattern.matches|Matcher.matches()所需要的正则表达式均为字符串，因此与常见的正则表达式有所不同。比如有下面一个字符串:<br> <a id="more"></a><br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#123;<span class="string">"timestamp"</span>:<span class="string">"1087188754894"</span>&#125;</div></pre></td></tr></table></figure></p>
 <p>如果你把它放到java的字符串里面去，它会变成这样子：</p>
@@ -98,10 +98,10 @@
   
   <entry>
     <title>Intellj IDEA中配置Spring+Mybatis</title>
-    <link href="http://xiaoai.site/Intellj-IDEA%E4%B8%AD%E9%85%8D%E7%BD%AESpring-Mybatis/"/>
-    <id>http://xiaoai.site/Intellj-IDEA中配置Spring-Mybatis/</id>
+    <link href="http://xiaoai.site/posts/migrate-spring-mybatis-in-IntelljIDEA/"/>
+    <id>http://xiaoai.site/posts/migrate-spring-mybatis-in-IntelljIDEA/</id>
     <published>2016-05-17T07:06:26.000Z</published>
-    <updated>2016-09-17T18:37:35.000Z</updated>
+    <updated>2016-09-18T05:03:52.000Z</updated>
     
     <content type="html"><![CDATA[<h4 id="Intellj-IDEA中配置Spring-Mybatis"><a href="#Intellj-IDEA中配置Spring-Mybatis" class="headerlink" title="Intellj IDEA中配置Spring+Mybatis"></a>Intellj IDEA中配置Spring+Mybatis</h4><p> Spring+Mybatis 可以面相接口编程（无需接口的实现类），且可由数据库生成代码，减少了大量编码工作量，整合的具体步骤如下：<br> <a id="more"></a></p>
 <ol>
@@ -119,7 +119,7 @@
 </li>
 <li><p>在文件夹的src目录下找到生成代码拷贝到编辑器的java目录下，如图所示：</p>
 <blockquote>
-<img src="/Intellj-IDEA中配置Spring-Mybatis/mybatisWithSpring.png" alt="This is an example image" title="This is an example image">
+<img src="/posts/migrate-spring-mybatis-in-IntelljIDEA/mybatisWithSpring.png" alt="This is an example image" title="This is an example image">
 </blockquote>
 </li>
 </ul>
@@ -152,10 +152,10 @@
   
   <entry>
     <title>mysql和java中的时间</title>
-    <link href="http://xiaoai.site/mysql%E5%92%8Cjava%E4%B8%AD%E7%9A%84%E6%97%B6%E9%97%B4/"/>
-    <id>http://xiaoai.site/mysql和java中的时间/</id>
+    <link href="http://xiaoai.site/posts/time-in-mysql-and-java/"/>
+    <id>http://xiaoai.site/posts/time-in-mysql-and-java/</id>
     <published>2016-04-15T12:48:58.000Z</published>
-    <updated>2016-09-17T18:42:51.000Z</updated>
+    <updated>2016-09-18T05:04:46.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="MySQL中的时间"><a href="#MySQL中的时间" class="headerlink" title="MySQL中的时间"></a>MySQL中的时间</h3><p>MySQL中有四种表示时间的类型，分别是 <code>DATETIME</code> <code>DATE</code> <code>TIMESTAMP</code> <code>TIME</code> 分别适用如下:<br> <a id="more"></a><br><code>date</code>:只有日期没有时间，范围为’1000-01-01’到’9999-12-31’，显示格式为’YYYY-MM-DD’</p>
 <p><code>DATETIME</code>:既有日期又有时间，范围为’1000-01-01 00:00:00’ 到 ‘9999-12-31 23:59:59’，显示格式为’YYYY-MM-DD HH:MM:SS’</p>
@@ -207,10 +207,10 @@
   
   <entry>
     <title>既然建了博客就写点东西</title>
-    <link href="http://xiaoai.site/%E6%97%A2%E7%84%B6%E5%BB%BA%E4%BA%86%E5%8D%9A%E5%AE%A2%E5%B0%B1%E5%86%99%E7%82%B9%E4%B8%9C%E8%A5%BF/"/>
-    <id>http://xiaoai.site/既然建了博客就写点东西/</id>
+    <link href="http://xiaoai.site/posts/start/"/>
+    <id>http://xiaoai.site/posts/start/</id>
     <published>2016-04-15T01:38:54.000Z</published>
-    <updated>2016-09-17T17:17:53.000Z</updated>
+    <updated>2016-09-18T04:59:27.000Z</updated>
     
     <content type="html"><![CDATA[<p>一时冲动看到域名特别便宜就买了，闲置了好长时间，因为懒一直被搁置，最近开始重新看一些编程所以弄了个hexo生成的博客放在github page上，既然弄了所以得写点东西以示存在吧，想了一下这个博客就分为一下两类<br><a id="more"></a></p>
 <blockquote>

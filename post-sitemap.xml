@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>http://xiaoai.site/posts/recommend-oulu-dictionary/</loc>
+        <lastmod>2016-09-18T05:10:50.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://xiaoai.site/posts/regex-in-java/</loc>
+        <lastmod>2016-09-18T05:05:47.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://xiaoai.site/posts/time-in-mysql-and-java/</loc>
         <lastmod>2016-09-18T05:04:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -15,24 +31,8 @@
     </url>
 
     <url>
-        <loc>http://xiaoai.site/posts/regex%20in%20java/</loc>
-        <lastmod>2016-09-18T05:04:21.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://xiaoai.site/posts/migrate-spring-mybatis-in-IntelljIDEA/</loc>
         <lastmod>2016-09-18T05:03:52.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://xiaoai.site/posts/recommend-oulu-dictionary/</loc>
-        <lastmod>2016-09-18T05:03:07.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
